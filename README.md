@@ -6,23 +6,13 @@
   ```sh
   yarn add eslint --dev
   ```
-  
-2. Install `eslint-config-zero41`:
-  ```sh
-  yarn add https://github.com/Zero41/eslint-config-zero41.git --dev
-  ```
-  
-3. Install `eslint-config-zero41-react`:
-  ```sh
-  yarn add https://github.com/Zero41/eslint-config-zero41-react.git --dev
-   ```
    
-4. Install `eslint-config-zero41-react-native`:
+2. Install `eslint-config-zero41-react-native`:
   ```sh
-  yarn add https://github.com/Zero41/eslint-config-zero41-react-native.git --dev
+  yarn add eslint-config-zero41-react-native@https://github.com/Zero41/eslint-config-zero41-react-native.git --dev
   ```
 
-5. Add `eslint-config-zero41-react-native` to your ESLint `.eslintrc.js` config:
+3. Add `eslint-config-zero41-react-native` to your ESLint `.eslintrc.js` config:
   ```javascript
   module.exports = {
     extends: ["eslint-config-zero41-react-native"],
@@ -33,7 +23,7 @@
   };
   ```
 
-6. If you are using absolute imports, use paths to define the root:
+4. If you are using absolute imports, use paths to define the root:
   ```diff
   module.exports = {
     extends: ["eslint-config-zero41-react-native"],
@@ -51,7 +41,7 @@
   };
   ```
   
-7. If you have files types other than `*.js`, `*.jsx`, `*.ts` or `*.tsx` add them:
+5. If you have files types other than `*.js`, `*.jsx`, `*.ts` or `*.tsx` add them:
   ```diff
   module.exports = {
     extends: ["eslint-config-zero41-react-native"],
