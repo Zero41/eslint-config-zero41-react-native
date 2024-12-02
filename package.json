@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config-zero41-react-native",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Jon Cahill",
+  "description": "Standard ESLint used in all Zero41 React Native projects",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^9.16.0",
+    "eslint-config-zero41-react": "https://github.com/Zero41/eslint-config-zero41-react.git",
+    "eslint-plugin-react-native": "^4.1.0"
+  }
+}
