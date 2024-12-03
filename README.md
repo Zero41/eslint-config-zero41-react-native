@@ -68,6 +68,23 @@
     },
   };
   ```
+6. Handle "Parse errors in imported module 'react-native': ';' expected."  
+  React Native has an outstanding [issue](https://github.com/facebook/react-native/issues/28549) 
+  which can cause this error. If this occurs add this to your `.eslintrc.js`
+  ```diff
+  module.exports = {
+    root: true,
+    extends: ["eslint-config-zero41-react-native"],
+  +  settings: {
+  +    'import/ignore': ['react-native'],
+  +  }
+    parserOptions: {
+      project: "./tsconfig.json",
+      tsconfigRootDir: __dirname,
+    },
+  };
+  ```
+  
 ## Other ESLint Configs
 - Standard ESLint for Zero41 Projects: [eslint-config-zero41](https://github.com/Zero41/eslint-config-zero41)
 - Standard ESLint for React Zero41 Projects: [eslint-config-zero41-react](https://github.com/Zero41/eslint-config-zero41-react)
