@@ -85,6 +85,9 @@
   };
   ```
   
+7. Your `TSConfig` might exclude your `.eslintrc.js` which can cause parsing errors, in that case 
+add `.eslintrc.js` to a `.eslintignore`
+  
 ## Other ESLint Configs
 - Standard ESLint for Zero41 Projects: [eslint-config-zero41](https://github.com/Zero41/eslint-config-zero41)
 - Standard ESLint for React Zero41 Projects: [eslint-config-zero41-react](https://github.com/Zero41/eslint-config-zero41-react)
