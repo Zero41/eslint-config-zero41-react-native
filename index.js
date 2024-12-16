@@ -4,5 +4,7 @@ module.exports = {
   env: {
     "react-native/react-native": true,
   },
-  rules: {},
+  rules: {
+    "react-native/no-inline-styles": "off",
+  },
 };
